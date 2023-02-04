@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form Clone</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>freeCodeCamp Survey Form</h1>
+            <p>Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <div class="container">
+            <label for="name" class="labelClass-non-check-radio">Name</label>
+                <input class="inputClass-non-check-radio" type="text" placeholder="Enter your name">
+            
+            <label for="email" class="labelClass-non-check-radio">Email</label>
+                <input class="inputClass-non-check-radio" type="email" placeholder="Enter your Email">
+            
+            <label for="age" class="labelClass-non-check-radio">Age (optional)</label>
+                <input class="inputClass-non-check-radio" type="number" placeholder="Age" min="10" max="99">
+            
+            <label for="role" class="labelClass-non-check-radio">Which option best describes your current role?</label>
+                <select name="role" id="role">
+                    <option value="" disabled selected>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="full-time-job">Full Time Job</option>
+                    <option value="full-time-learner">Full Time Learner</option>
+                    <option value="not-say">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            
+            <label class="labelClass-non-check-radio radioLabelClass">Would you recommend freeCodeCamp to a friend?</label>  
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                <label class="likertClass" for="definitely">Definitely</label>
+            </span>  
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                <label class="likertClass" for="maybe">Maybe</label>
+            </span>
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                <label class="likertClass" for="not-sure">Not sure</label>
+            </span>
+
+            <label for="favorite" class="labelClass-non-check-radio favoriteFeature">What is your favorite feature of freeCodeCamp?</label>
+            <select name="favorite" id="feature">
+                <option value="" disabled selected>Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="project">Projects</option>
+                <option value="community">Community</option>
+                <option value="open-source">Open Source</option>
+            </select>
+            
+            <label for="check-boxes" class="labelClass-non-check-radio favoriteFeature">What would you like to see improved? (Check all that apply)</label>
+            <span class="check-boxes-text">
+                <input type="checkbox"> Front-end Projects
+            </span>
+            <span class="check-boxes-text">
+                <input type="checkbox"> Back-end Projects               
+            </span>
+            <span class="check-boxes-text">
+                <input type="checkbox"> Data Visualization
+            </span>
+            <span class="check-boxes-text">
+                <input type="checkbox"> Challenges
+            </span>
+            <span class="check-boxes-text">
+                <input type="checkbox"> Open Source Community
+            </span>
+            <span class="check-boxes-text">
+                <input type="checkbox"> Gitter help rooms
+            </span>
+            <span class="check-boxes-text">
+                <input type="checkbox"> Videos
+            </span>
+            <span class="check-boxes-text">
+                <input type="checkbox"> City Meetups
+            </span>
+            <span class="check-boxes-text">
+                <input type="checkbox"> Wiki
+            </span>
+            <span class="check-boxes-text">
+                <input type="checkbox"> Forum
+            </span>
+            <span class="check-boxes-text">
+                <input type="checkbox" class="lastone"> Additional Courses
+            </span>
+
+            <label class="labelClass-non-check-radio favoriteFeature" for="comment">Any comments or suggestions?</label>
+            <textarea name="comment" id="comment" cols="30" rows="4" placeholder="Enter your comment here..."></textarea>
+            <input type="submit">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,134 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(to right,rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)),url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h1, p {
+    margin:0;
+}
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+.container {
+    background-color: rgba(27, 27, 50, 0.8);
+    width: 650px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    border-radius: 0.3em;
+}
+
+.labelClass-non-check-radio {
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.inputClass-non-check-radio {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 25px;
+    border-radius: 0.3em;
+    border: 0;
+    outline-color: blue;
+}
+
+select {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 0.3em;
+    border: 0;
+    outline-color: blue;
+}
+
+.likertClass {
+    font-size: 25px;
+    vertical-align: middle;
+    margin: 0;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    transform: scale(1.6);
+    margin-right: 10px;
+}
+
+.radio-span{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.radioLabelClass{
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+
+.favoriteFeature{
+    margin-top: 1.5em;
+}
+
+span {
+    cursor: default;
+}
+
+.check-boxes-text{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 22px;
+    margin-left:0;
+    margin-top: 0;
+}
+
+textarea{
+    padding: 10px;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin:0;
+    margin-bottom: 30px;
+    resize: vertical;
+    min-height: 120px;
+}
+
+input[type="submit"]{
+    margin:0;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #37af65;
+    color: white;
+    border: 0;
+    border-radius: 0.1em;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
